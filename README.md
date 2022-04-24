@@ -1,15 +1,11 @@
-# Basic Sample Hardhat Project
+# Metaschool Elon NFT project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+## Make sure to change the metadata link the the contract with your own.
 
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+Create a .env in the this folder and feed in your Private key and Alchemy API url in it.
+### `.env` should contain
 ```
+API_KEY=<your_alchemy_api_key>
+PRIVATE_KEY=<your_private_key>
+```
+After all that's done, enter `npx hardhat run scripts/run.js --netowork rinkeby`
